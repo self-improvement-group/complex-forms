@@ -1,0 +1,110 @@
+body {
+    color: #fff;
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 900px;
+    margin: auto;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.form_btn input[type=radio] {
+    display: none;
+}
+
+.form_btn {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form_btn input[type=checkbox] {
+    display: none;
+}
+.form_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #444444;
+    background-color: #303030;
+    user-select: none;
+    border-radius: 20px;
+}
+
+/* Checked */
+.form_btn input[type=checkbox]:checked + label {
+    background-color: #fff;
+    color: #000;
+}
+.form_btn input[type=radio]:checked + label {
+    background-color: #fff;
+    color: #000;
+}
+ 
+/* Hover */
+.form_btn label:hover {
+    background-color: #464646;
+}
+
+.label {
+    /* float: left; */
+    display: inline-block;
+    /* margin-right: 20px; */
+    font-size: 24px;
+    width: 49%;
+    vertical-align: top;
+}
+
+.data_block {
+    display: inline-block;
+    /* display: block; */
+    width: 49%;
+    /* border: 1px solid #444444; */
+}
+
+.input_value {
+    color: #dedede;
+    background-color: #121212;
+    border: 1px solid #323232;
+    height: 24px;
+    width: 175px;
+}
+
+.select {
+    color: #dedede;
+    background-color: #121212;
+    border: 1px solid #323232;
+    height: 28px;
+    width: 175px;
+    font-size: 16px;
+}
+
+/* Такое нельзя использовать :) */
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="range"] {
+    background-color: #000;
+    color: #000;
+}

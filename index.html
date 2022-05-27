@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <h1>Кастомизация авто</h1>
+      <form action="/ru/custom/" class="form">
+        <div class="row">
+          <label class="label">Тип кузова:</label>
+          <select id="body_type" class="select">
+            <option value="0">Универсал</option>
+            <option value="1">Купе</option>
+            <option value="2">Седан</option>
+            <option value="3">Кабриолет</option>
+            <option value="4">Пикап</option>
+            <option value="5">Лимузин</option>
+            <option value="6">Внедорожник</option>
+          </select>
+        </div>
+        <div class="row">
+          <label class="label">Тип топлива:</label>
+          <div class="data_block">
+            <div class="form_btn">
+                <input type="radio" id="radio_body_1" name="fuel_type" value="0">
+                <label class="label_radio" for="radio_body_1">Дизель</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_body_2" name="fuel_type" value="1" checked>
+                <label class="label_radio" for="radio_body_2">Бензин</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_body_3" name="fuel_type" value="2">
+                <label class="label_radio" for="radio_body_3">Газ</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_body_4" name="fuel_type" value="3">
+                <label class="label_radio" for="radio_body_4">Гибрид</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_body_5" name="fuel_type" value="4">
+                <label class="label_radio" for="radio_body_5">Электро</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Объём двигателя:</label>
+          <input type="number" class="input_value" name="engine_cc">
+          <span>см<sup>3</sup></span>
+        </div>
+        <div class="row">
+          <label class="label">Мощность двигателя:</label>
+          <input type="number" class="input_value" name="engine_power">
+          <span>л.с.</span>
+        </div>
+        <div class="row">
+          <label class="label">КПП:</label>
+          <div class="data_block">
+            <div class="form_btn">
+                <input type="radio" id="radio_gearbox_1" name="gearbox_type" value="0">
+                <label class="label_radio" for="radio_gearbox_1">Механика</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_gearbox_2" name="gearbox_type" value="1" checked>
+                <label class="label_radio" for="radio_gearbox_2">Автомат</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_gearbox_3" name="gearbox_type" value="2">
+                <label class="label_radio" for="radio_gearbox_3">Типтроник</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_gearbox_4" name="gearbox_type" value="3">
+                <label class="label_radio" for="radio_gearbox_4">Робот</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_gearbox_5" name="gearbox_type" value="4">
+                <label class="label_radio" for="radio_gearbox_5">Вариатор</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Тип привода:</label>
+          <div class="data_block">
+            <div class="form_btn">
+                <input type="radio" id="radio_drive_1" name="drive_type" value="0">
+                <label class="label_radio" for="radio_drive_1">Полный</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_drive_2" name="drive_type" value="1">
+                <label class="label_radio" for="radio_drive_2">Передний</label>
+              </div>
+              <div class="form_btn">
+                <input type="radio" id="radio_drive_3" name="drive_type" value="2" checked>
+                <label class="label_radio" for="radio_drive_3">Задний</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Оптика:</label>
+          <div class="data_block">
+            <div class="form_btn">
+                <input type="checkbox" id="checkbox_optics_1" name="optics" value="0">
+                <label class="label_checkbox" for="checkbox_optics_1">Дневные ходовые огни</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_optics_2" name="optics" value="1">
+                <label class="label_checkbox" for="checkbox_optics_2">Противотуманные фары</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_optics_3" name="optics" value="2">
+                <label class="label_checkbox" for="checkbox_optics_3">Система адаптивного освещения</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_optics_4" name="optics" value="3">
+                <label class="label_checkbox" for="checkbox_optics_4">Система управления дальним светом</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Система помощи при парковке:</label>
+          <div class="data_block">
+            <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_1" name="parking" value="0">
+                <label class="label_checkbox" for="checkbox_parking_1">Задняя камера</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_2" name="parking" value="1">
+                <label class="label_checkbox" for="checkbox_parking_2">Передняя камера</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_3" name="parking" value="2">
+                <label class="label_checkbox" for="checkbox_parking_3">Камера 360</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_4" name="parking" value="3">
+                <label class="label_checkbox" for="checkbox_parking_4">Система Автоматической парковки</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_5" name="parking" value="4">
+                <label class="label_checkbox" for="checkbox_parking_5">Парктроник задний</label>
+              </div>
+              <div class="form_btn">
+                <input type="checkbox" id="checkbox_parking_6" name="parking" value="5">
+                <label class="label_checkbox" for="checkbox_parking_6">Парктроник передний</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Цвет:</label>
+          <div class="data_block">
+            <input type="color" name="body_color">
+              <div class="form_btn clr_btn">
+                <input type="checkbox" id="metallic_color1" name="metallic_color" value="5">
+                <label class="label_checkbox" for="metallic_color1">Металлик</label>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label" for="release_year">Год выпуска:</label>
+          <input type="range" id="release_year" name="release_year" value="2022" min="1980" max="2022" step="1" oninput="this.nextElementSibling.value = this.value">
+          <output>2022</output>
+        </div>
+      </form>
+</body>
+</html>
