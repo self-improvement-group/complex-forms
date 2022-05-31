@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    max-width: 900px;
+}
+
+.form-label {
+    font-size: 24px;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #303030;
+    --bs-btn-border-color: #444444;
+    --bs-btn-border-radius: 5rem;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #464646;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #444444;
+  }
+
+.input {
+    color: #dedede !important;
+    background-color: #121212 !important;
+    border: #323232;
+    
+}
+
+.my-select {
+    color: #dedede;
+    background-color: #121212;
+    border: #323232;
+}

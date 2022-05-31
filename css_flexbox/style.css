@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: space-around;
+    width: 900px;
+}
+
+.row {
+    display: flex;
+    margin-top: 15px;
+}
+
+.one_element {
+    justify-content: center;
+}
+
+.flex_item {
+    flex: 1;
+}
+
+.data_block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.button {
+    font-size: 24px;
+    color: #fff;
+    background-color: #303030;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 34px;
+    padding: 0px 15px;
+}
+
+/* Hover */
+.button:hover {
+    background-color: #464646;
+}
+
+.form_note {
+    font-size: 16px;
+    color: #dedede;
+    background-color: #121212;
+    border: 1px solid #323232;
+    min-height: 100px;
+}
+
+.label {
+    font-size: 24px;
+}
+
+.form_btn input[type=radio] {
+    display: none;
+}
+
+.form_btn {
+    display: inline-block;
+}
+
+.form_btn input[type=checkbox] {
+    display: none;
+}
+.form_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #444444;
+    background-color: #303030;
+    user-select: none;
+    border-radius: 20px;
+}
+
+/* Checked */
+.form_btn input[type=checkbox]:checked + label {
+    background-color: #fff;
+    color: #000;
+}
+.form_btn input[type=radio]:checked + label {
+    background-color: #fff;
+    color: #000;
+}
+ 
+/* Hover */
+.form_btn label:hover {
+    background-color: #464646;
+}
+
+.input_value {
+    color: #dedede;
+    background-color: #121212;
+    border: 1px solid #323232;
+    height: 24px;
+    width: 175px;
+}
+
+.select {
+    color: #dedede;
+    background-color: #121212;
+    border: 1px solid #323232;
+    height: 28px;
+    width: 175px;
+    font-size: 16px;
+}
+
+/* Такое нельзя использовать :) */
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}

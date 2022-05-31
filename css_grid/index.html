@@ -12,7 +12,7 @@
 </head>
 <body>
       <h1>Кастомизация авто</h1>
-      <form action="/ru/custom/" class="form">
+      <form action="/ru/custom/" id="auto_main_form" class="grid">
         <div class="row">
           <label class="label">Тип кузова:</label>
           <select id="body_type" class="select">
@@ -52,13 +52,17 @@
         </div>
         <div class="row">
           <label class="label">Объём двигателя:</label>
-          <input type="number" class="input_value" name="engine_cc">
-          <span>см<sup>3</sup></span>
+          <div>
+            <input type="number" class="input_value" name="engine_cc" required>
+            <span>см<sup>3</sup></span>
+          </div>
         </div>
         <div class="row">
           <label class="label">Мощность двигателя:</label>
-          <input type="number" class="input_value" name="engine_power">
-          <span>л.с.</span>
+          <div>
+            <input type="number" class="input_value" name="engine_power" required>
+            <span>л.с.</span>
+          </div>
         </div>
         <div class="row">
           <label class="label">КПП:</label>
@@ -164,8 +168,17 @@
         </div>
         <div class="row">
           <label class="label" for="release_year">Год выпуска:</label>
-          <input type="range" id="release_year" name="release_year" value="2022" min="1980" max="2022" step="1" oninput="this.nextElementSibling.value = this.value">
-          <output>2022</output>
+          <div>
+            <input type="range" id="release_year" name="release_year" value="2022" min="1980" max="2022" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output>2022</output>
+          </div>
+        </div>
+        <div class="row">
+          <label class="label">Примечания:</label>
+          <textarea form="auto_main_form" type="text" name="notes" id="notes" class="form_note"></textarea>
+        </div>
+        <div class="row">
+          <button form="auto_main_form" type="submit" class="button">Отправить</button>
         </div>
       </form>
 </body>

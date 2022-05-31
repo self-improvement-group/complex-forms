@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles\bootstrap.min.css">
+      <link rel="stylesheet" href="styles\style.css">
+      <title>Document</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-md">
+      <h1 class="text-center">Кастомизация авто</h1>
+      <form action="/ru/custom/" id="auto_main_form" class="form m-auto">
+        <div class="row mt-1">
+          <label class="form-label col">Тип кузова:</label>
+          <div class="col">
+            <select id="body_type" class="form-select my-select">
+              <option value="0">Универсал</option>
+              <option value="1">Купе</option>
+              <option value="2">Седан</option>
+              <option value="3">Кабриолет</option>
+              <option value="4">Пикап</option>
+              <option value="5">Лимузин</option>
+              <option value="6">Внедорожник</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">Тип топлива:</label>
+          <div class="col">
+                <input type="radio" class="btn-check" id="radio_body_1" name="fuel_type" value="0">
+                <label class="btn btn-bd-primary m-1" for="radio_body_1">Дизель</label>
+                <input type="radio" class="btn-check" id="radio_body_2" name="fuel_type" value="1" checked>
+                <label class="btn btn-bd-primary m-1" for="radio_body_2">Бензин</label>
+                <input type="radio" class="btn-check" id="radio_body_3" name="fuel_type" value="2">
+                <label class="btn btn-bd-primary m-1" for="radio_body_3">Газ</label>
+                <input type="radio" class="btn-check" id="radio_body_4" name="fuel_type" value="3">
+                <label class="btn btn-bd-primary m-1" for="radio_body_4">Гибрид</label>
+                <input type="radio" class="btn-check" id="radio_body_5" name="fuel_type" value="4">
+                <label class="btn btn-bd-primary m-1" for="radio_body_5">Электро</label>
+          </div>
+        </div>
+        <div class="row mt-1">
+            <label for="engine_cc" class="form-label col-md-7" for="engine_cc">Объём двигателя:</label>
+            <div class="col">
+              <div class="row">
+                <input type="number" class="form-control input col" id="engine_cc" name="engine_cc" placeholder="150" required>
+                <span class="col">см<sup>3</sup></span>
+              </div>
+            </div>
+        </div>
+        <div class="row mt-1">
+          <label for="engine_power" class="form-label col-md-7">Мощность двигателя:</label>
+          <div class="col">
+            <div class="row">
+              <input type="number" class="form-control input col" id="engine_power" name="engine_power" placeholder="200" required>
+              <span class="col">л.с.</span>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">КПП:</label>
+          <div class="col">
+                <input type="radio" class="btn-check" id="radio_gearbox_1" name="gearbox_type" value="0">
+                <label class="btn btn-bd-primary m-1" for="radio_gearbox_1">Механика</label>
+                <input type="radio" class="btn-check" id="radio_gearbox_2" name="gearbox_type" value="1" checked>
+                <label class="btn btn-bd-primary m-1" for="radio_gearbox_2">Автомат</label>
+                <input type="radio" class="btn-check" id="radio_gearbox_3" name="gearbox_type" value="2">
+                <label class="btn btn-bd-primary m-1" for="radio_gearbox_3">Типтроник</label>
+                <input type="radio" class="btn-check" id="radio_gearbox_4" name="gearbox_type" value="3">
+                <label class="btn btn-bd-primary m-1" for="radio_gearbox_4">Робот</label>
+                <input type="radio" class="btn-check" id="radio_gearbox_5" name="gearbox_type" value="4">
+                <label class="btn btn-bd-primary m-1" for="radio_gearbox_5">Вариатор</label>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">Тип привода:</label>
+          <div class="btn-group col g-1" role="group">
+                <input type="radio" class="btn-check" id="radio_drive_1" name="drive_type" value="0">
+                <label class="btn btn-bd-primary" for="radio_drive_1">Полный</label>
+                <input type="radio" class="btn-check" id="radio_drive_2" name="drive_type" value="1">
+                <label class="btn btn-bd-primary" for="radio_drive_2">Передний</label>
+                <input type="radio" class="btn-check" id="radio_drive_3" name="drive_type" value="2" checked>
+                <label class="btn btn-bd-primary" for="radio_drive_3">Задний</label>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">Оптика:</label>
+          <div class="col">
+                <input type="checkbox" class="btn-check" id="checkbox_optics_1" name="optics" value="0">
+                <label class="btn btn-bd-primary m-1" for="checkbox_optics_1">Дневные ходовые огни</label>
+                <input type="checkbox" class="btn-check" id="checkbox_optics_2" name="optics" value="1">
+                <label class="btn btn-bd-primary m-1" for="checkbox_optics_2">Противотуманные фары</label>
+                <input type="checkbox" class="btn-check" id="checkbox_optics_3" name="optics" value="2">
+                <label class="btn btn-bd-primary m-1" for="checkbox_optics_3">Система адаптивного освещения</label>
+                <input type="checkbox" class="btn-check" id="checkbox_optics_4" name="optics" value="3">
+                <label class="btn btn-bd-primary m-1" for="checkbox_optics_4">Система управления дальним светом</label>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">Система помощи при парковке:</label>
+          <div class="col">
+                <input type="checkbox" class="btn-check" id="checkbox_parking_1" name="parking" value="0">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_1">Задняя камера</label> 
+                <input type="checkbox" class="btn-check" id="checkbox_parking_2" name="parking" value="1">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_2">Передняя камера</label>
+                <input type="checkbox" class="btn-check" id="checkbox_parking_3" name="parking" value="2">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_3">Камера 360</label>
+                <input type="checkbox" class="btn-check" id="checkbox_parking_4" name="parking" value="3">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_4">Система Автоматической парковки</label>
+                <input type="checkbox" class="btn-check" id="checkbox_parking_5" name="parking" value="4">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_5">Парктроник задний</label>
+                <input type="checkbox" class="btn-check" id="checkbox_parking_6" name="parking" value="5">
+                <label class="btn btn-bd-primary m-1" for="checkbox_parking_6">Парктроник передний</label>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col">Цвет:</label>
+          <div class="row col">
+            <div class="col">
+              <input type="color" class="form-control form-control-color" id="ColorInput" value="#000" title="Choose your color">
+            </div>
+            <div class="col">
+              <input type="checkbox" class="btn-check" id="metallic_color1" name="metallic_color" value="1">
+              <label class="btn btn-bd-primary" for="metallic_color1">Металлик</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <label class="form-label col" for="release_year">Год выпуска:</label>
+          <div class="col">
+            <input type="range" class="form-range" id="release_year" name="release_year" value="2022" min="1980" max="2022" step="1" oninput="this.nextElementSibling.value = this.value">
+            <output>2022</output>
+          </div>
+        </div>
+        <div class="row mt-1">
+            <label for="form-notes" class="form-label col">Примечания</label>
+            <textarea class="form-control input col" id="form-notes" rows="4" style="min-height: 84px;"></textarea>
+        </div>
+        <div class="row mt-1">
+          <button form="auto_main_form" type="submit" class="btn btn-bd-primary">Отправить</button>
+          <div class="flex_item"></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
